@@ -1,0 +1,51 @@
+.container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  border-radius: 12px;
+  padding: 0.875rem 1.25rem;
+  font-size: 14px;
+  animation: slideIn 0.3s ease;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  min-width: 260px;
+  max-width: 340px;
+}
+
+.success { border-color: rgba(92,255,168,0.35); }
+.error { border-color: rgba(255,92,92,0.35); }
+
+.icon {
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.success .icon { color: var(--success); }
+.error .icon { color: var(--danger); }
+
+.close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--text3);
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

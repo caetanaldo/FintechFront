@@ -1,0 +1,13 @@
+.page { animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+.header { margin-bottom: 2rem; }
+.title {
+  font-family: 'Instrument Serif', serif;
+  font-size: 32px; letter-spacing: -0.5px;
+  color: var(--text); margin-bottom: 0.25rem;
+}
+.sub { font-size: 14px; color: var(--text2); }
+
+.list { display: flex; flex-direction: column; gap: 0.5rem; }
+.empty { text-align: center; padding: 3rem; color: var(--text3); font-size: 14px; }
